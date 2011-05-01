@@ -38,7 +38,7 @@ local MacroEditBox_OnEvent = MacroEditBox:GetScript("OnEvent")
 -- The main concern is taint, but I've tested it fairly well, and analyzed the execution path, and I'm
 -- reasonably sure taint isn't an issue.
 -- If taint does become a problem, there are other implementations that work just as well; they're just
--- less elegant. The dev version in the SVN has an alternative implementation commented out at the bottom.
+-- less elegant. The dev version in Git has an alternative implementation commented out at the bottom.
 local function OnCallback(command)
 	MacroEditBox_OnEvent(MacroEditBox, "EXECUTE_CHAT_LINE", command)
 end
