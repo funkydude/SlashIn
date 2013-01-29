@@ -25,7 +25,7 @@
 	THE SOFTWARE.
 ---------------------------------------------------------------------------]]
 local addonName, SlashIn = ...
-SlashIn.ScheduleTimer = LibStub("AceTimer-3.0").ScheduleTimer
+LibStub("AceTimer-3.0"):Embed(SlashIn)
 
 local print = print
 local tonumber = tonumber
