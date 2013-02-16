@@ -1,4 +1,4 @@
-## Interface: 50001
+## Interface: 50100
 ## Title: SlashIn
 ## Author: Morsker
 ## Notes: Provides the /in command for delayed execution.
@@ -13,3 +13,4 @@ libs\AceTimer-3.0\AceTimer-3.0.xml
 #@end-no-lib-strip@
 
 SlashIn.lua
+
