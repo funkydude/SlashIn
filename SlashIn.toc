@@ -1,4 +1,4 @@
-## Interface: 60100
+## Interface: 60200
 ## Title: SlashIn
 ## Author: Morsker
 ## Notes: Provides the /in command for delayed execution.
