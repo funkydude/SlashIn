@@ -27,7 +27,7 @@ function SlashCmdList.SLASHIN_IN(msg)
 	local secs, command = msg:match("^([^%s]+)%s+(.*)$")
 	secs = tonumber(secs)
 	if (not secs) or (#command == 0) then
-		print("|cff33ff99SlashIn:|r"
+		print("|cff33ff99SlashIn:|r")
 		print("|cff33ff99Usage:|r /in <seconds> <command>")
 		print("|cff33ff99Example:|r /in 1.5 /say hi")
 	else
