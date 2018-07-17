@@ -1,4 +1,5 @@
 package-as: SlashIn
+wowi-archive-previous: no
 
 externals:
     libs/AceTimer-3.0: https://repos.wowace.com/wow/ace3/trunk/AceTimer-3.0
