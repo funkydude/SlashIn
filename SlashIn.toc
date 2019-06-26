@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 80200
 ## Version: @project-version@
 ## Author: Funkydude
 ## Title: SlashIn
