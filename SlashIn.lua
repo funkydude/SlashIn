@@ -1,21 +1,21 @@
 
-local _, SlashIn = ...
-LibStub("AceTimer-3.0"):Embed(SlashIn)
-
+local CTimerAfter = C_Timer.After
 local print = print
 local tonumber = tonumber
 local MacroEditBox = MacroEditBox
-local MacroEditBox_OnEvent = MacroEditBox:GetScript("OnEvent")
 
 -- We execute lines by faking them as EXECUTE_CHAT_LINE events to the MacroEditBox defined in ChatFrame.lua.
 -- The main benefit of this is that MacroEditBox gets special treatment in ChatEdit_OnEscapePressed.
 -- It's also elegant, and reuses Blizzard code.
 -- The main concern is taint, but I've tested it fairly well, and analyzed the execution path, and I'm
 -- reasonably sure taint isn't an issue.
--- If taint does become a problem, there are other implementations that work just as well; they're just
--- less elegant. The dev version in Git has an alternative implementation commented out at the bottom.
+local dummy = function() end
 local function OnCallback(command)
-	MacroEditBox_OnEvent(MacroEditBox, "EXECUTE_CHAT_LINE", command)
+	MacroEditBox:SetText(command)
+	local ran = xpcall(ChatEdit_SendText, dummy, MacroEditBox)
+	if not ran then
+		print("|cff33ff99SlashIn:|r", "This command failed:", command)
+	end
 end
 
 -- GLOBALS: SLASH_SLASHIN_IN1
@@ -29,8 +29,8 @@ function SlashCmdList.SLASHIN_IN(msg)
 	if (not secs) or (#command == 0) then
 		print("|cff33ff99SlashIn:|r")
 		print("|cff33ff99Usage:|r /in <seconds> <command>")
-		print("|cff33ff99Example:|r /in 1.5 /say hi")
+		print("|cff33ff99Example:|r /in 1.5 /emote rocks")
 	else
-		SlashIn:ScheduleTimer(OnCallback, secs, command)
+		CTimerAfter(secs, function() OnCallback(command) end)
 	end
 end

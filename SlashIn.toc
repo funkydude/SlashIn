@@ -20,7 +20,4 @@
 ## X-Curse-Project-ID: 26308
 ## X-WoWI-ID: 18054
 
-libs\LibStub\LibStub.lua
-libs\AceTimer-3.0\AceTimer-3.0.xml
-
 SlashIn.lua
