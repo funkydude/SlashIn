@@ -13,7 +13,6 @@
 ## Notes-esMX: Provides the /in command for delayed execution.
 ## Notes-itIT: Provides the /in command for delayed execution.
 ## Notes-ptBR: Provides the /in command for delayed execution.
-## OptionalDeps: Ace3
 ## X-Category: Miscellaneous
 ## X-Credits: Morsker
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.

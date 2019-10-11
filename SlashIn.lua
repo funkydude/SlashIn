@@ -18,12 +18,12 @@ local function OnCallback(command)
 	end
 end
 
--- GLOBALS: SLASH_SLASHIN_IN1
--- GLOBALS: SLASH_SLASHIN_IN2
-SLASH_SLASHIN_IN1 = "/in"
-SLASH_SLASHIN_IN2 = "/slashin"
+-- GLOBALS: SLASH_SLASHIN1
+-- GLOBALS: SLASH_SLASHIN2
+SLASH_SLASHIN1 = "/in"
+SLASH_SLASHIN2 = "/slashin"
 
-function SlashCmdList.SLASHIN_IN(msg)
+function SlashCmdList.SLASHIN(msg)
 	local secs, command = msg:match("^([^%s]+)%s+(.*)$")
 	secs = tonumber(secs)
 	if (not secs) or (#command == 0) then
