@@ -1,6 +1,4 @@
 ## Interface: 90100
-## Interface-Classic: 11307
-## Interface-BCC: 20501
 ## Version: @project-version@
 ## Author: Funkydude
 ## Title: SlashIn
