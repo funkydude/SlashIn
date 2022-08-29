@@ -1,0 +1,22 @@
+## Interface: 30400
+## Version: @project-version@
+## Author: Funkydude
+## Title: SlashIn
+## Notes: Provides the /in command for delayed execution.
+## Notes-deDE: Provides the /in command for delayed execution.
+## Notes-ruRU: Provides the /in command for delayed execution.
+## Notes-zhCN: Provides the /in command for delayed execution.
+## Notes-zhTW: Provides the /in command for delayed execution.
+## Notes-koKR: Provides the /in command for delayed execution.
+## Notes-frFR: Provides the /in command for delayed execution.
+## Notes-esES: Provides the /in command for delayed execution.
+## Notes-esMX: Provides the /in command for delayed execution.
+## Notes-itIT: Provides the /in command for delayed execution.
+## Notes-ptBR: Provides the /in command for delayed execution.
+## X-Category: Miscellaneous
+## X-Credits: Morsker
+## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
+## X-Curse-Project-ID: 26308
+## X-WoWI-ID: 18054
+
+SlashIn.lua
