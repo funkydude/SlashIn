@@ -18,5 +18,6 @@
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 ## X-Curse-Project-ID: 26308
 ## X-WoWI-ID: 18054
+## X-Wago-ID: pkNMDOGz
 
 SlashIn.lua
